@@ -88,7 +88,6 @@ def delay_input(s):
     return input()
 
 def hangman_start(wait_time):
-    # liste = ["altenheim","amulett","anlage","arm","aufkleber","auspuff","auto","ball","bar","baum","bestellliste","betttuch","biokraftstoff","blatt","buch","callcenter","castingshow","chinese","clip","computer","dach","dichtung","disco","dollar","dorfschule","eimer","eisenbahn","engel","ergebnis","fahrrad","feuer","film","foto","forelle","freiheit","gehirn","gehweg","grundgesetz","gymnasium","hafen","haus","heimatland","holz","horn","igel","impfstoff","information","infusion","insel","jachthafen","jacke","jobcenter","jugendclub","kaktus","kamm","kammer","keller","leber","leiste","leiter","liebe","locher","maus","monat","monitor","music","muskel","nabelschnur","nachbar","nagel","nase","natur","nonne","notunterkunft","obst","ochse","offizier","orgel","osterei","paket","papier","passwort","pimmel","politiker","poster","quader","quark","quecksilber","quelle","quastenflosser","rabe","radio","rakete","reifen","rettungswagen","ritter","sand","scanner","sprunggelenk","schloss","strauch","tasche","taschenrechner","tastatur","taste","tiger","tisch","turnschuh","ulme","umschlagplatz","umwelt","unwetter","vanille","vater","verdauung","verkehr","versicherung","vogel","waage","waggon","waschzeug","wasser","wort","wurzel","xylophon","yogalehrer","zahn","zeichen","zeitung","zentrum"]
     with open("wordliste.txt") as f:
         liste = f.readlines()
     m = randrange (len(liste))
