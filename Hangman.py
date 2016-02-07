@@ -88,8 +88,11 @@ def delay_input(s):
     return input()
 
 def hangman_start(wait_time):
+    # Read the word list and clean it
     with open("wordliste.txt") as f:
-        liste = f.readlines()
+        liste = [w.lower().strip() for w in f.readlines()]
+    
+    # Choose a random word
     m = randrange (len(liste))
     wort = (liste[m])
     a = len(wort)
