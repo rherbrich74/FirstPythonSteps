@@ -4,6 +4,7 @@ def nicolaus ():
     a = 1
     i = 5
     x = 0
+    #Nothing
     pencolor("white")
     lt(180)
     fd(700)
