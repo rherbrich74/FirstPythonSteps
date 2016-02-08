@@ -11,3 +11,4 @@ This repository contains my first steps with Python. The files do the following:
 - **Fibo2** Calculation of the fibonacci (alternative solution)
 - **HangmanBeispiel** Example for Hangman
 - **Hangman.py** My initial implementation of Hangman
+- **Modulo** Modulo of two numbers
