@@ -12,6 +12,7 @@ def bingo():
         print (55 * "*")
     else:
         print (a,b,"Schade :( Naechstes mal hast du vielleicht mehr Glueck")
+bingo()
     
         
     
