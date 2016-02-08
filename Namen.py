@@ -8,4 +8,4 @@ def namen(z):
     print "(2) z:" , z
     zahl = 3 * z
     print "(3) zahl:" , zahl
-    
+
