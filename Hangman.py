@@ -155,7 +155,7 @@ def ReadLetter(wait_time, Versuche, benutzt, Leben, mask):
     return delay_input ("BITTE EINEN BUCHSTABEN EINGEBEN... \n")
     
 
-def HANGMAN() :
+def hangman() :
     Leben= 10
     Buchstabe = " "
     wait_time = 0.0
@@ -202,4 +202,4 @@ def HANGMAN() :
                     return
     delay_print ("\nDas  wars ...........  Tod durch den Galgen. Das Wort waere " + str(L1[0]) + " gewesen.")
         
-HANGMAN()
+hangman()
