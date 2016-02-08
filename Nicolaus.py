@@ -1,6 +1,6 @@
 from turtle import *
 
-def kaestchen ():
+def nicolaus ():
     a = 1
     i = 5
     x = 0
@@ -97,5 +97,5 @@ def kaestchen ():
             rt(135)
             fd(140)
             lt(90)
-kaestchen()
+nicolaus()
     
