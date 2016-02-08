@@ -1,3 +1,7 @@
+# Autor: Alexander Herbrich
+# Wann: 03.02.2016
+# Thema: Programm zum loesen des magischen Quadrats erstellen
+
 def quadrat():
 #    A + B + C = S
 #    D + M + d = S
