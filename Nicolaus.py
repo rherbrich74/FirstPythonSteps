@@ -2,13 +2,13 @@ from turtle import *
 
 def nicolaus ():
     a = 1
-    i = 5
+    i = 3
     x = 0
     pencolor("white")
     lt(180)
-    fd(700)
+    fd(220)
     rt(90)
-    fd(200)
+    fd(60)
     rt(90)
     pencolor("red")
     lt(90)
@@ -36,7 +36,7 @@ def nicolaus ():
             rt(90)
             fd(20)
             rt(90)
-            fd(1120)
+            fd(560)
             lt(90)
             fd(280)
             lt(90)
@@ -59,7 +59,7 @@ def nicolaus ():
             fd(140)
             lt(90)
             fd(140)
-            x -= 5
+            x -= 3
         else:
             pencolor("green")
             lt(90)
