@@ -1,3 +1,7 @@
+# Autor: Alexander Herbrich
+# Wann: 09.02.16
+# Thema: Turtle "Haus vom Nicolaus"
+
 from turtle import *
 
 def nicolaus ():
