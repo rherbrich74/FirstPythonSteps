@@ -67,7 +67,7 @@ Gebe bitte die gewuenschte Schwierigkeitsstufe ein... \n""")
         joker = 0
     if (Schwierigkeit.lower() == "training"):
         leben = 999999
-        joker = 99999
+        joker = 999999
     delay_print ("Du hast dich fuer " + Schwierigkeit + " entschieden." )
     delay_print ("Um einen Joker zu verwenden gebe JOKER ein")
     time.sleep(wait_time * 4)
