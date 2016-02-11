@@ -3,7 +3,7 @@ from math import *
 import time
 import sys
 
-def delay_print(s, delay=0.05):
+def delay_print(s, delay=0.06):
     for c in str(s):
         sys.stdout.write('%s' % c )
         sys.stdout.flush()
@@ -68,9 +68,9 @@ Gebe bitte die gewuenschte Schwierigkeitsstufe ein... \n""")
     if (Schwierigkeit.lower() == "training"):
         leben = 999999
         joker = 999999
-    delay_print ("Du hast dich fuer " + Schwierigkeit + " entschieden." )
-    delay_print ("Um einen Joker zu verwenden gebe JOKER ein")
-    time.sleep(wait_time * 4)
+    delay_print ("\nDu hast dich fuer " + Schwierigkeit + " entschieden.\n" )
+    delay_print ("\nUm einen Joker zu verwenden gebe JOKER ein\n")
+    time.sleep(wait_time * 6)
     delay_print ("\nJetzt geht's los!!! Viel Spass und Erfolg Alex!!!\n")
     time.sleep(wait_time * 3)
     while leben > 0:
