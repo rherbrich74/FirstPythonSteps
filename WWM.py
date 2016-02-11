@@ -3,7 +3,7 @@ from math import *
 import time
 import sys
 
-def delay_print(s, delay=0.06):
+def delay_print(s, delay=0.05):
     for c in str(s):
         sys.stdout.write('%s' % c )
         sys.stdout.flush()
@@ -25,11 +25,13 @@ Wie heisst du denn? \n""")
         time.sleep(wait_time*4)
         sys.exit("Das Spiel wurde verlassen\n") 
 
-def WWM_eingabe(wait_time, versuch, leben):
+def WWM_eingabe(wait_time, versuch, leben, joker):
     print ("\n" + "-" * 80)
     print ("\n" + str(versuch) + ". Frage")
     print ("\t" * 7 + "Leben:")
     print ("\t" * 7 + str(leben))
+    print ("\t" * 7 + "Joker:")
+    print ("\t" * 7 + str(joker))
 
 def WWM_fragen():
     with open("fragen.txt") as f:
@@ -43,21 +45,29 @@ def WWM():
     versuch = 0
     wait_time = 0.15
     benutzt = []
-    WWM_start(wait_time)
-    Schwierigkeit = delay_input ("""\nAuf welche Schwierigkeitsstufe willst du spielen?\n
+    #WWM_start(wait_time)
+    Schwierigkeit = delay_input ("""\nAuf welcher Schwierigkeitsstufe willst du spielen?\n
+-Training
 -Leicht
 -Mittel
 -Schwer
 -Ultra \n
-Gebe bitte die gewuenschte Schwierigkeit ein... \n""")
+Gebe bitte die gewuenschte Schwierigkeitsstufe ein... \n""")
     if (Schwierigkeit.lower() == "leicht"):
         leben = 10
+        joker = 3
     if (Schwierigkeit.lower() == "mittel"):
         leben = 8
+        joker = 2
     if (Schwierigkeit.lower() == "schwer"):
         leben = 5
+        joker = 1
     if (Schwierigkeit.lower() == "ultra"):
         leben = 3
+        joker = 0
+    if (Schwierigkeit.lower() == "training"):
+        leben = 999999
+        joker = 999999
     delay_print ("\nJetzt geht's los!!! Viel Spass und Erfolg Alex!!!\n")
     time.sleep(wait_time * 3)
     while leben > 0:
@@ -69,9 +79,12 @@ Gebe bitte die gewuenschte Schwierigkeit ein... \n""")
         benutzt.append(question)
         
         versuch += 1
-        WWM_eingabe(wait_time, versuch, leben)
+        WWM_eingabe(wait_time, versuch, leben, joker)
         print ("\n")
         Antwort = delay_input("Wie heisst die Hauptstadt von " + question + "?\n")
+        if (Antwort.lower() == "joker"):
+            print (anwser)
+            joker -= 1
         if (Antwort.lower() == anwser.lower()):
             #delay_print ("\nYeah! Sie haben die " + str(versuch) + ". Frage richtig beantwortet!\n\n")
             delay_print ("\nJaa!!! Du lagst richtig!\n")
