@@ -77,7 +77,7 @@ Hangman_Pics = ["""
 ============== """ ]
                         
 
-def delay_print(s, delay=0.05):
+def delay_print(s, delay=0.06):
     for c in str(s):
         sys.stdout.write('%s' % c )
         sys.stdout.flush()
