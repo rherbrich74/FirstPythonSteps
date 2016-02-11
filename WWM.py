@@ -71,7 +71,7 @@ Gebe bitte die gewuenschte Schwierigkeitsstufe ein... \n""")
     delay_print ("\nDu hast dich fuer " + Schwierigkeit + " entschieden.\n" )
     delay_print ("\nUm einen Joker zu verwenden gebe JOKER ein\n")
     time.sleep(wait_time * 6)
-    delay_print ("\nJetzt geht's los!!! Viel Spass und Erfolg Alex!!!\n")
+    delay_print ("\nJetzt geht's los!!! Viel Spass und Erfolg \n")
     time.sleep(wait_time * 3)
     while leben > 0:
         L1 = WWM_fragen()
