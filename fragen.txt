@@ -1,10 +1,94 @@
-Was ist die Hauptstadt von Deutschland?
+Albanien
+Tirana
+Andorra	
+Andorra la Vella
+Belgien	
+Brüssel
+Bosnien-Herzegowina
+Sarajevo
+Bulgarien
+Sofia
+Dänemark
+Kopenhagen
+Deutschland
 Berlin
-Was ist die Hauptstadt von Grossbritannien?
-London
-Was ist die Hauptstadt von Frankreich?
+Estland	
+Tallinn
+Finnland
+Helsinki
+Frankreich
 Paris
-Was ist die Hauptstadt von Spanien?
-Madrid
-Was ist die Hauptstadt von Portugal?
+Griechenland
+Athen
+Großbritannien
+London
+Irland
+Dublin
+Island
+Reykjavik
+Italien
+Rom
+Kosovo
+Pristina
+Kroatien
+Zagreb
+Lettland
+Riga
+Liechtenstein
+Vaduz
+Litauen
+Vilnius
+Luxemburg
+Luxemburg
+Makedonien
+Skopje
+Malta
+Valletta
+Moldawien
+Chisinau
+Monaco
+Monaco-Ville
+Montenegro
+Podgorica
+Niederlande
+Amsterdam
+Norwegen
+Oslo
+Österreich
+Wien
+Polen
+Warschau
+Portugal
 Lissabon
+Rumänien
+Bukarest
+Russland
+Moskau
+San Marino
+San Marino
+Schweden
+Stockholm
+Schweiz
+Bern
+Serbien
+Belgrad
+Slowakei
+Bratislava
+Slowenien
+Ljubljana
+Spanien
+Madrid
+Tschechische Republik
+Prag
+Türkei
+Ankara
+Ukraine
+Kiew
+Ungarn
+Budapest
+Vatikan
+Vatikanstadt
+Weißrussland
+Minsk
+Zypern
+Nikosia

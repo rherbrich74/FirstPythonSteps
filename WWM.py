@@ -14,11 +14,11 @@ def delay_input(s):
     return input()
 
 def WWM_start(wait_time):
-    Teilnehmer = delay_input ("""Willommen beim Hauptstadt-Wissenstest. Sie koennen hier ein paar Fragen beantworten, um ihr Wissen zu ueberpruefen.
-Wie heissen sie denn? \n""")
-    Teilnahme = delay_input ("\nHallo " + Teilnehmer + "! Wollen sie denn ueberhaupt am Quiz teilnehmen? Zum Fortfahren (JA) und zum Beenden (NEIN)\n")
+    Teilnehmer = delay_input ("""Willommen beim Hauptstadt-Wissenstest. Mit diesem Test kannst du dein Wissen testen.
+Wie heisst du denn? \n""")
+    Teilnahme = delay_input ("\nHallo " + Teilnehmer + "! Willst du am Quiz teilnehmen? Zum Fortfahren (JA) und zum Beenden (NEIN)\n")
     if (Teilnahme.lower() == "ja"):
-        delay_print("\nJetzt geht es los :-) Viel Spass und Erfolg. \n")
+        delay_print("\nGleich geht es los :-) \n")
         time.sleep(wait_time*4)
     else:
         delay_print ("\nDas Spiel wird jetzt beendet...\n")
@@ -26,7 +26,8 @@ Wie heissen sie denn? \n""")
         sys.exit("Das Spiel wurde verlassen\n") 
 
 def WWM_eingabe(wait_time, versuch, leben):
-    print ("\n" + str(versuch) + ". Versuch")
+    print ("\n" + "-" * 80)
+    print ("\n" + str(versuch) + ". Frage")
     print ("\t" * 7 + "Leben:")
     print ("\t" * 7 + str(leben))
 
@@ -41,9 +42,24 @@ def WWM_fragen():
 def WWM():
     versuch = 0
     wait_time = 0.15
-    leben = 3
     benutzt = []
-    #WWM_start(wait_time)
+    WWM_start(wait_time)
+    Schwierigkeit = delay_input ("""\nAuf welche Schwierigkeitsstufe willst du spielen?\n
+-Leicht
+-Mittel
+-Schwer
+-Ultra \n
+Gebe bitte die gewuenschte Schwierigkeit ein... \n""")
+    if (Schwierigkeit.lower() == "leicht"):
+        leben = 10
+    if (Schwierigkeit.lower() == "mittel"):
+        leben = 8
+    if (Schwierigkeit.lower() == "schwer"):
+        leben = 5
+    if (Schwierigkeit.lower() == "ultra"):
+        leben = 3
+    delay_print ("\nJetzt geht's los!!! Viel Spass und Erfolg Alex!!!\n")
+    time.sleep(wait_time * 3)
     while leben > 0:
         L1 = WWM_fragen()
         question = L1[0]
@@ -55,7 +71,7 @@ def WWM():
         versuch += 1
         WWM_eingabe(wait_time, versuch, leben)
         print ("\n")
-        Antwort = delay_input(question + "\n")
+        Antwort = delay_input("Wie heisst die Hauptstadt von " + question + "?\n")
         if (Antwort.lower() == anwser.lower()):
             #delay_print ("\nYeah! Sie haben die " + str(versuch) + ". Frage richtig beantwortet!\n\n")
             delay_print ("\nJaa!!! Du lagst richtig!\n")
