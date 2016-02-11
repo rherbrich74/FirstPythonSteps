@@ -23,3 +23,4 @@ This repository contains my first steps with Python. The files do the following:
 - **Webcrawler** Finds all links in a website
 - **Werte** Compares the value of two numbers
 - **Wort** Shifts the letters by the limit set
+- **WWM** "Wer wird Millonaer" based Quiz
