@@ -87,13 +87,14 @@ Gebe bitte die gewuenschte Schwierigkeitsstufe ein... \n""")
         time.sleep(wait_time * 4)
         Antwort = delay_input("Wie heisst die Hauptstadt von " + question + "?\n")
         if (Antwort.lower() == "joker"):
-            print ("\n" + anwser)
+            delay_print ("\n" + anwser)
             joker -= 1
+            time.sleep(wait_time * 4)
         if (Antwort.lower() == anwser.lower()):
             #delay_print ("\nYeah! Sie haben die " + str(versuch) + ". Frage richtig beantwortet!\n\n")
             delay_print ("\nJaa!!! Das war richtig!\n")
             time.sleep(wait_time * 3)
-        if (Antwort.lower() != anwser.lower()):
+        if ((Antwort.lower() != anwser.lower()) and (Antwort.lower() != "joker")):
             #delay_print ("\nOhh! Leider haben sie die " + str(versuch) + ". Frage falsch beantwortet!\n\n")
             delay_print("\nOhh!!! Du lagst NICHT richtig! Die richtige Loesung waere " + anwser.upper() + " gewesen.\n")
             time.sleep(wait_time * 4)
