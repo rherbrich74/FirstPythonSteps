@@ -45,7 +45,7 @@ def WWM():
     versuch = 0
     wait_time = 0.15
     benutzt = []
-    #WWM_start(wait_time)
+    WWM_start(wait_time)
     Schwierigkeit = delay_input ("""\nAuf welcher Schwierigkeitsstufe willst du spielen?\n
 -Training
 -Leicht
@@ -67,7 +67,10 @@ Gebe bitte die gewuenschte Schwierigkeitsstufe ein... \n""")
         joker = 0
     if (Schwierigkeit.lower() == "training"):
         leben = 999999
-        joker = 999999
+        joker = 99999
+    delay_print ("Du hast dich fuer " + Schwierigkeit + " entschieden." )
+    delay_print ("Um einen Joker zu verwenden gebe JOKER ein")
+    time.sleep(wait_time * 4)
     delay_print ("\nJetzt geht's los!!! Viel Spass und Erfolg Alex!!!\n")
     time.sleep(wait_time * 3)
     while leben > 0:
@@ -81,13 +84,14 @@ Gebe bitte die gewuenschte Schwierigkeitsstufe ein... \n""")
         versuch += 1
         WWM_eingabe(wait_time, versuch, leben, joker)
         print ("\n")
+        time.sleep(wait_time * 4)
         Antwort = delay_input("Wie heisst die Hauptstadt von " + question + "?\n")
         if (Antwort.lower() == "joker"):
             print (anwser)
             joker -= 1
         if (Antwort.lower() == anwser.lower()):
             #delay_print ("\nYeah! Sie haben die " + str(versuch) + ". Frage richtig beantwortet!\n\n")
-            delay_print ("\nJaa!!! Du lagst richtig!\n")
+            delay_print ("\nJaa!!! Das war richtig!\n")
             time.sleep(wait_time * 3)
         else:
             #delay_print ("\nOhh! Leider haben sie die " + str(versuch) + ". Frage falsch beantwortet!\n\n")
