@@ -1,6 +1,6 @@
 # Autor: Alexander Herbrich
 # Wann: 03.02.2016
-# Thema: Hangman ausgebaut
+# Thema: Hangman
 
 from random import *
 import time
