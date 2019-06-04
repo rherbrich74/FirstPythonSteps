@@ -1,6 +1,6 @@
 # Autor: Alexander Herbrich
 # Wann: 03.02.2016
-# Thema: Hangman ausgebaut
+# Thema: Hangman
 
 from random import *
 import time
@@ -77,7 +77,7 @@ Hangman_Pics = ["""
 ============== """ ]
                         
 
-def delay_print(s, delay=0.05):
+def delay_print(s, delay=0.06):
     for c in str(s):
         sys.stdout.write('%s' % c )
         sys.stdout.flush()
@@ -155,7 +155,7 @@ def ReadLetter(wait_time, Versuche, benutzt, Leben, mask):
     return delay_input ("BITTE EINEN BUCHSTABEN EINGEBEN... \n")
     
 
-def HANGMAN() :
+def hangman() :
     Leben= 10
     Buchstabe = " "
     wait_time = 0.0
@@ -202,4 +202,4 @@ def HANGMAN() :
                     return
     delay_print ("\nDas  wars ...........  Tod durch den Galgen. Das Wort waere " + str(L1[0]) + " gewesen.")
         
-HANGMAN()
+hangman()

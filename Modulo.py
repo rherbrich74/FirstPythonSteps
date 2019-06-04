@@ -10,5 +10,3 @@ def modulo(n , K):
     else:
         return (False,i)
 
-
-    

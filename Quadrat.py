@@ -1,4 +1,9 @@
+# Autor: Alexander Herbrich
+# Wann: 03.02.2016
+# Thema: Programm zum loesen des magischen Quadrats erstellen
+
 def quadrat():
+#    DIESES PRORAMM ENTHAELT NOCH FEHLER!!!!!
 #    A + B + C = S
 #    D + M + d = S
 #    a + b + c = S
@@ -61,5 +66,6 @@ def quadrat():
 #           print ("\tA=" + str(A) + "\tB=" + str(B) + "\tC=" + str(C) + "\tM=" + str(M) + "\tS=" + str(S))
             
     print ("Anzahl:" + str(ianz) + "\tAnzahl2:" + str(ianz2))
+quadrat()
     
                             
